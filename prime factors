@@ -1,0 +1,12 @@
+def prime_factors_product(num):
+    product = 1
+    divisor = 2
+    while num > 1:
+        if num % divisor == 0:
+            product *= divisor
+            while num % divisor == 0:
+                num //= divisor
+        divisor += 1
+    return product
+num = 25
+print("Product is:", prime_factors_product(num))
