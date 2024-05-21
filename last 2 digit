@@ -1,0 +1,7 @@
+
+n=int(input("enter a number:"))
+a=n%100
+if(n>100):
+    print( n)
+else:
+    print("last digit : ",a)
