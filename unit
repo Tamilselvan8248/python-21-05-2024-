@@ -1,0 +1,15 @@
+units = int(input("Enter the number of units consumed: "))
+if units <= 199:
+    charge = 1.20
+elif units <= 400:
+    charge = 1.50
+elif units <= 600:
+    charge = 1.80
+else:
+    charge = 2.00
+total_amount = units * charge
+if total_amount > 400:
+    total_amount += total_amount * 0.15
+if total_amount < 100:
+    total_amount = 100
+print("Total amount to be paid: Rs.", round(total_amount, 2))
