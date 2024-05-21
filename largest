@@ -1,0 +1,9 @@
+
+
+x,y,z=map(int,input().split())
+if(x>y and x>z):
+    print(x,"is largest")
+if(y>x and y>z):
+    print(y,"is largest")
+if(z>x and z>y):
+    print(z,"is largest")
