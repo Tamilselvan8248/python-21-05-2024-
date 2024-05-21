@@ -1,0 +1,6 @@
+
+l1,l2,l3=map(int,input().split())
+if(l1+l2>l3):
+    print("valid triangle")
+else:
+    print("Invalid triangle")
