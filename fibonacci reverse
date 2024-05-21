@@ -1,0 +1,16 @@
+def fibonacci_reverse(n):
+    fib_series = []
+    a, b = 0, 1
+    for _ in range(n):
+        fib_series.append(a)
+        a, b = b, a + b
+    fib_series.reverse()
+    return fib_series
+n = int(input("Enter any number: "))
+if n < 1:
+    print("Invalid input")
+else:
+    print("Fibonacci series in reverse order:")
+    reversed_series = fibonacci_reverse(n)
+    for num in reversed_series:
+        print(num, end=" ")
