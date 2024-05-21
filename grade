@@ -1,0 +1,17 @@
+mark_1 = float(input())
+mark_2 = float(input())
+mark_3 = float(input())
+average_mark = (mark_1 + mark_2 + mark_3) / 3
+if average_mark >= 90:
+    grade = 'A'
+elif average_mark >= 80:
+    grade = 'B'
+elif average_mark >= 70:
+    grade = 'C'
+elif average_mark >= 60:
+    grade = 'D'
+elif average_mark >= 50:
+    grade = 'E'
+else:
+    grade = 'F'
+print(f'The grade is {grade}')
