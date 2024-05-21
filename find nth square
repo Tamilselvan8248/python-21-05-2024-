@@ -1,0 +1,7 @@
+def find_nth_square_cube(n):
+    if n <= 0:
+        return "Invalid input"
+    return (n ** 6)
+n = int(input("Enter a number: "))
+result = find_nth_square_cube(n)
+print(result)
