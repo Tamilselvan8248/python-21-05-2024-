@@ -1,0 +1,11 @@
+days_late = int(input("Enter the number of days the book is returned late: "))
+if days_late <= 0:
+    print("No fine")
+elif days_late <= 5:
+    print("Fine: Rs. " + str(days_late * 0.5))
+elif days_late <= 10:
+    print("Fine: Rs. " + str((days_late - 5) * 1 + 2.5))
+elif days_late <= 30:
+    print("Fine: Rs. " + str((days_late - 10) * 5 + 7.5))
+else:
+    print("Membership cancelled")
