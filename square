@@ -1,0 +1,9 @@
+num = int(input("Enter any integer: "))
+if num < 0:
+    print("Error: Negative numbers cannot be perfect squares.")
+else:
+    sqrt = num ** 0.5
+    if sqrt.is_integer():
+        print("Yes")
+    else:
+        print("No")
