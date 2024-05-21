@@ -1,0 +1,5 @@
+def print_asterisk_pattern(rows):
+    for _ in range(rows):
+        print("****")
+rows = int(input("Enter number of rows: "))
+print_asterisk_pattern(rows)
