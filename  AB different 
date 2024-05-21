@@ -1,0 +1,4 @@
+
+A, B = map(int, input().split())
+difference = abs(A - B)
+print(difference)
