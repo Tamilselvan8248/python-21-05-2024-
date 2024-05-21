@@ -1,0 +1,15 @@
+def find_and_sum_divisibles_by_9(n, m):
+    if n > m:
+        n, m = m, n
+    if n % 9 != 0:
+        start = n + (9 - n % 9)
+    else:
+        start = n
+    total_sum = 0   
+    for num in range(start, m + 1, 9):
+        total_sum += num
+    return total_sum
+n = 10
+m = 100
+result = find_and_sum_divisibles_by_9(n, m)
+print(f"The sum of integers between {n} and {m} that are divisible by 9 is: {result}")
