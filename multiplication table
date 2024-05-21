@@ -1,0 +1,8 @@
+def print_multiplication_table(n, m):
+    for i in range(1, m + 1):
+        print(f"{n} x {i} = {n * i}")
+n, m = map(int, input("Enter n and m: ").split())
+
+# Print multiplication table
+print(f"Multiplication table of {n} up to {m} rows:")
+print_multiplication_table(n, m)
