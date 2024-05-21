@@ -1,0 +1,47 @@
+print("Welcome to the calculator!")
+while True:
+    print("\n1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Modulus")
+    print("6. Average")
+    print("7. Power")
+    print("8. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        print("The sum is: ", number_1 + number_2)
+    elif choice == 2:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        print("The difference is: ", number_1 - number_2)
+    elif choice == 3:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        print("The product is: ", number_1 * number_2)
+    elif choice == 4:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        if number_2 != 0:
+            print("The quotient is: ", number_1 / number_2)
+        else:
+            print("Error: Division by zero is not allowed.")
+    elif choice == 5:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        print("The modulus is: ", number_1 % number_2)
+    elif choice == 6:
+        number_1 = int(input("Enter the first number: "))
+        number_2 = int(input("Enter the second number: "))
+        print("The average is: ", (number_1 + number_2) / 2)
+    elif choice == 7:
+        number_1 = int(input("Enter the base number: "))
+        number_2 = int(input("Enter the exponent: "))
+        print("The result is: ", number_1 ** number_2)
+    elif choice == 8:
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
