@@ -1,0 +1,7 @@
+
+h=int(input("enter a hour:"))
+m=60*h
+if(h>0 and h<11):
+    print(m,"/11")
+else:
+    print("Invalid input")
