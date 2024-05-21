@@ -1,0 +1,12 @@
+
+marrage=str(input("enter (m/u):"))
+gender=str(input("enter a gender(m/f):"))
+age=int(input("enter age :"))
+if(marrage=='m'):
+    print("eligble")
+elif(marrage=='u' and gender=='m' and age>=30):
+    print("eligble")
+elif(marrage=='u' and gender=='f' and age>=25):
+    print("eligble")
+else:
+    print("not elgible")
